@@ -12,9 +12,9 @@ public class DepositCalculator {
     }
 
     double random(double value, int places) {
-        double Scale = Math.pow(10, places);
+        double scale = Math.pow(10, places);
 
-        return Math.round(value * Scale) / Scale;
+        return Math.round(value * scale) / scale;
     }
 
     void calculating( ) {
