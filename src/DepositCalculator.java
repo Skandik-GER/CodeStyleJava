@@ -19,7 +19,7 @@ public class DepositCalculator {
     }
 
     //calculating isnt a verb((((
-    void calculating() {
+    void calculation() {
         int period, action;
 
         Scanner scanner = new Scanner(System.in); //
@@ -34,23 +34,23 @@ public class DepositCalculator {
         action = scanner.nextInt();
         //gooooooooood
 
-        double Var = 0; //wtf?
+        double result = 0; //wtf?
 
         if (action == 1) {
-            Var = calculateSimplePercent(amount, 0.06, period);
+            result = calculateSimplePercent(amount, 0.06, period);
 //more spaces please
         } else if (action == 2) {
 
-            Var = calculateComplexPercent(amount, 0.06, period);
+            result = calculateComplexPercent(amount, 0.06, period);
         }
         //great job!!! but wtf Var?
 
-        System.out.println("Результат вклада: " + amount + " за " + period + " лет превратятся в " + Var);
+        System.out.println("Результат вклада: " + amount + " за " + period + " лет превратятся в " + result);
     }
 
 public static void main(String[] args){
 
-        new DepositCalculator().calculating();
+        new DepositCalculator().calculation();
 
     }
 }
